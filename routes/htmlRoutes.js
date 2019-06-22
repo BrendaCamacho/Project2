@@ -26,10 +26,12 @@ module.exports = function(app) {
     res.sendFile(path.join(__dirname, "../public/signin.html"));
   });
 
-  //Registro 
+  //Register
   app.get("/register", function(req, res){
     res.sendFile(path.join(__dirname, "../public/register.html"));
   });
+
+
 
   // Render 404 page for any unmatched routes
   app.get("*", function(req, res) {
