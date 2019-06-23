@@ -3,7 +3,14 @@ var $exampleText = $("#example-text");
 var $exampleDescription = $("#example-description");
 var $submitBtn = $("#submit");
 var $exampleList = $("#example-list");
-
+//Get references to page elements form
+var $submitBand = $("#submitBand")
+var $bandName = $("#bandName");
+var $bandGenre = $("#bandGenre");
+var $bandLocation = $("#bandLocation");
+var $bandVacancy = $("#bandVacancy");
+var $bandDescription = $("#bandDescription");
+var $bandFblink = $("#bandFblink");
 // The API object contains methods for each kind of request we'll make
 var API = {
   saveExample: function(example) {
@@ -16,6 +23,16 @@ var API = {
       data: JSON.stringify(example)
     });
   },
+  saveBand: function(band) {
+    return $.ajax({
+      headers: {
+        "Content-Type": "application/json"
+      },
+      type: "POST",
+      url: "api/bands",
+      data: JSON.stringify(band)
+    });
+  },  
   getExamples: function() {
     return $.ajax({
       url: "api/examples",
@@ -61,7 +78,7 @@ var refreshExamples = function() {
 
 // handleFormSubmit is called whenever we submit a new example
 // Save the new example to the db and refresh the list
-var handleFormSubmit = function(event) {
+/* var handleFormSubmit = function(event) {
   event.preventDefault();
 
   var example = {
@@ -81,7 +98,42 @@ var handleFormSubmit = function(event) {
 
   $exampleText.val("");
   $exampleDescription.val("");
-};
+}; */
+
+
+var handleFormSubmit = function(event) {
+  event.preventDefault();
+  var band = {
+    bandName: $bandName.val().trim(),
+    bandGenre: $bandGenre.val().trim(),
+    bandLocation: $bandLocation.val().trim(),
+    bandVacancy: $bandVacancy.val().trim(),
+    bandDescription: $bandDescription.val().trim(),
+    bandFblink: $bandFblink.val().trim()
+  };
+  //console log to verify the object is being created
+  console.log(band);
+
+  if (!(band.bandName)) {
+    alert("You must fill the missing fields");
+    return;
+  }
+  alert("You click")
+
+  API.saveBand(band).then(function() {
+    alert("Adding band!")
+    //refreshExamples();
+    window.location.href = "/form";
+  });
+
+  $bandName.val(""),
+  $bandGenre.val(""),
+  $bandLocation.val(""),
+  $bandVacancy.val(""),
+  $bandDescription.val(""),
+  $bandFblink.val("")
+}; 
+
 
 // handleDeleteBtnClick is called when an example's delete button is clicked
 // Remove the example from the db and refresh the list
@@ -98,3 +150,4 @@ var handleDeleteBtnClick = function() {
 // Add event listeners to the submit and delete buttons
 $submitBtn.on("click", handleFormSubmit);
 $exampleList.on("click", ".delete", handleDeleteBtnClick);
+$submitBand.on("click", handleFormSubmit);
