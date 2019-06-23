@@ -47,7 +47,7 @@ var refreshExamples = function() {
 
       var $button = $("<button>")
         .addClass("btn btn-danger float-right delete")
-        .text("ｘ");
+        .text("o");
 
       $li.append($button);
 
@@ -75,7 +75,8 @@ var handleFormSubmit = function(event) {
   }
 
   API.saveExample(example).then(function() {
-    refreshExamples();
+    //refreshExamples();
+    window.location.href = "/";
   });
 
   $exampleText.val("");
