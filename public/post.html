@@ -72,46 +72,51 @@
 
                         <div class="input-field col s12">
                             <i class="material-icons prefix">account_circle</i>
-                            <input id="icon_prefix" type="text" class="bandName"></input>
+                            <input id="icon_prefix" type="text" id="bandName"></input>
                             <label for="icon_prefix">Band Name</label>
                         </div>
                     </div>
-                    <select multiple class=bandLocation>
-                        <option value="1">Guadalajara</option>
-                        <option value="2">Monterrey</option>
-                        <option value="3">Mexico City</option>
+                    <select multiple id="bandLocation">
+                        <option value="Guadalajara">Guadalajara</option>
+                        <option value="Monterrey">Monterrey</option>
+                        <option value="Mexico City">Mexico City</option>
                     </select>
                     <label>Choose location</label>
 
                 </div>
 
                 <div class="input-field col s12">
-                    <select multiple class="bandVacancy">
-                        <option value="1">Guitar</option>
-                        <option value="2">Vocalist</option>
-                        <option value="3">Drums</option>
+                    <select multiple id="bandVacancy">
+                        <option value="Guitarist">Guitarist</option>
+                        <option value="Vocalist">Vocalist</option>
+                        <option value="Drums">Drums</option>
+                        <option value="Synth">Synth</option>
+
                     </select>
                     <label>Choose what you are looking for</label>
 
                 </div>
-
+        
 
                 <div class="input-field col s12">
-                    <select multiple class="bandGenre">
+                    <select multiple id="bandGenre">
 
-                        <option value="1">Rock</option>
-                        <option value="2">Pop</option>
-                        <option value="3">Jazz</option>
-                        <option value="4">Regional Mexican</option>
+                        <option value="Rock">Rock</option>
+                        <option value="Pop">Pop</option>
+                        <option value="Jazz">Jazz</option>
                     </select>
                     <label>Choose band's genre</label>
 
                 </div>
-                <div class="input-field col s12 jobDescription">
+                <div class="input-field col s12" id="jobDescription">
                     <input id="input_text" type="text" data-length="10">
                     <label for="input_text">Describe your vacancy</label>
                 </div>
-                <button class="btn waves-effect waves-light right submit" type="submit" name="action">POST
+                <div class="input-field col s12">
+                        <input id="input_text" type="text" data-length="10"  id="bandFbLink">
+                        <label for="input_text">Add a link to your Facebook</label>
+                    </div>
+                <button class="btn waves-effect waves-light right" id="submitBand" type="submit" name="action">POST
                     <i class="material-icons right">send</i>
                 </button>
 
@@ -140,7 +145,7 @@
                     </div>
                     <div class="footer-copyright">
                         <div class="container">
-                            © 2019 Copyrigh
+                            © 2019 Copyright
                             <a class="grey-text text-lighten-4 right" href="#!">HerokuApp</a>
                         </div>
                     </div>
@@ -160,43 +165,43 @@
             $('select').formSelect();
         });
 
-            $(".submit").on("click", function () {
-                event.preventDefault();
+            // $("#submitBand").on("click", function () {
+            //     event.preventDefault();
 
-                var newPost = {
-                    bandName: $('.bandName').val().trim(),
-                    // bandLocation: $('.bandLocation').val().trim(),
-                    // bandVacancy: $('.bandVacancy').val().trim(),
-                    // bandGenre: $('.bandGenre').val().trim(),
-                    jobDescription: $('.jobDescription').val().trim(),
-                    valores:[
-                    $('.bandLocation').val().trim(),
-                    $('.bandVacancy').val().trim(),
-                    $('.bandGenre').val().trim(),
-                    ]
+            //     var band = {
+            //         bandName: $('#bandName').val().trim(),
+            //         // bandLocation: $('.bandLocation').val().trim(),
+            //         // bandVacancy: $('.bandVacancy').val().trim(),
+            //         // bandGenre: $('.bandGenre').val().trim(),
+            //         jobDescription: $('#jobDescription').val().trim(),
+            //         valores:[
+            //         $('#bandLocation').val().trim(),
+            //         $('#bandVacancy').val().trim(),
+            //         $('#bandGenre').val().trim(),
+            //         ]
                 
             
 
-                };
-                console.log(newPost);
-                var currentURL = window.location.origin;
-                $.post(currentURL + "/api/post", newPost,
-                    function (data) {
-                        if (data == true) {
-                            alert("Your post has been amade!")
-                        }
-                        if (data == false) {
-                            alert("Sorry, we could post your vancancy")
-                        }
-                        $('.bandName').val("");
-                        $('.bandLocation').val("");
-                        $('.bandVacancy').val("");
-                        $('.bandGenre').val("");
-                        $('.JobDescription').val("");
+            //     };
+            //     console.log(band);
+            //     var currentURL = window.location.origin;
+            //     $.post(currentURL + "/api/post", band,
+            //         function (data) {
+            //             if (data == true) {
+            //                 alert("Your post has been amade!")
+            //             }
+            //             if (data == false) {
+            //                 alert("Sorry, we could post your vancancy")
+            //             }
+            //             $('#bandName').val("");
+            //             $('#bandLocation').val("");
+            //             $('#bandVacancy').val("");
+            //             $('#bandGenre').val("");
+            //             $('#JobDescription').val("");
 
-                    });
-                return false;
-            });
+            //         });
+            //     return false;
+            // });
     </script>
 </body>
 
