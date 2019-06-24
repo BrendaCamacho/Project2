@@ -1,3 +1,163 @@
-.list-group-item {
-  line-height: 2.5;
+nav {
+  background-color: transparent !important;
+  border: #0b0d0f 4em!important;
+  box-shadow: none!important;
+}
+nav i, nav [class^="mdi-"], nav [class*="mdi-"], nav i.material-icons {
+  font-size:1.2em!important
+}
+
+nav ul a{
+  font-size: 1.2em!important
+}
+/* BODY GRADIANT */
+body {
+  background-image: linear-gradient(to bottom, #4a16df, #5109ad, #4a0680, #3c0957, #290b33, #1c0d28, #130b1c, #07060b, #080a0d, #0b0d0f, #0e1010, #111212);
+  /* background-image: linear-gradient(to top, #fe0260, #cc1b4d, #9c203c, #6e1f2c, #431a1e, #30161e, #1d1118, #080708, #060506, #040304, #020202, #000000); */
+  /* background-image: linear-gradient(to right, #d7d2cc 0%, #304352 100%); */
+}
+
+.header {
+  font-family: 'Gugi', cursive;
+  /* font-family: 'Chango', cursive; */
+  /* color:#21E16C; */
+  color: white;
+  opacity: .4;
+  text-align: CENTER !important;
+  font-size: 10rem !important;
+  padding-left: .5rem;
+  text-shadow:#4a16df  6px!important
+
+
+}
+h1{
+  font-family: 'Gugi', cursive;
+
+  text-align: right !important;
+  font-size: 2.5rem !important;
+  opacity: .4;
+
+  color: white;
+
+}
+.parallax{
+  margin-left: -20%
+}
+
+.parallaxText {
+  font-size: 2.3rem !important;
+  text-align: center !important;
+
+}
+
+.parallax-container {
+  height: 420px !important;
+}
+
+select {
+  font-size: 4em !important;
+  color: white !important;
+  background-color: white !important;
+}
+
+label {
+  font-size: 1em !important;
+}
+
+label.active {
+  color: white !important
+}
+
+option {
+  margin: 1em !important;
+  color: white !important;
+}
+.select-wrapper input.select-dropdown:focus{
+  color:white!important;
+  border-bottom: 1px solid white !important;
+
+}
+
+span {
+  background-color: white !important;
+  color: #4a16df !important
+}
+
+
+#input_text {
+  color: white !important;
+  box-shadow: #5109ad !important;
+  -webkit-box-shaddow: #5109ad !important;
+  border-bottom-color: white !important;
+  height: 10em !important;
+}
+.input-field{
+  color:white!important;
+}
+
+.jobDescription {
+  color: white !important;
+
+}
+
+select.wrapper {
+  color: white !important;
+}
+
+/* label color */
+.input-field label {
+  color: white;
+}
+
+/* label focus color */
+.input-field input[type=text]:focus+label {
+  color: white !important;
+
+}
+
+/* label underline focus color */
+.input-field input[type=text]:focus {
+  border-bottom: 1px solid white !important;
+  box-shadow: 0 1px 0 0 white !important;
+}
+
+/* valid color */
+.input-field input[type=text].valid {
+  border-bottom: 1px solid white !important;
+  box-shadow: 0 1px 0 0 white !important;
+}
+
+/* invalid color */
+.input-field input[type=text].invalid {
+  border-bottom: 1px solid white !important;
+  box-shadow: 0 1px 0 0 white !important;
+}
+
+/* icon prefix focus color */
+.input-field .prefix.active {
+  color: white !important;
+}
+
+#submitBand {
+  margin-right: 1em !important;
+  background-color: white !important;
+  opacity: .9;
+  color: #5109ad !important
+}
+
+
+/* footer */
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+footer{
+  color:#4a16df!important;
 }
