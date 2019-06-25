@@ -1,0 +1,167 @@
+{{!--     <h1>This is the form to add a Band Add</h1>
+        <form class="clearfix mb-4" action="POST">
+          <div class="form-group">
+            <label for="bandName">Name of the band</label>
+            <input type="text" id="bandName" class="form-control" placeholder="Band name here">
+          </div>
+          <div class="form-group">
+            <label for="bandGenre">Genre</label>
+            <select name="bandGenre"id="bandGenre">
+                <option value="Rock">Rock</option>
+                <option value="Jazz">Jazz</option>
+                <option value="Pop">Pop</option>                                
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="bandLocation">Location</label>
+            <select name="bandLocation"id="bandLocation">
+                <option value="CDMX">CDMX</option>
+                <option value="GDL">GDL</option>
+                <option value="MTY">MTY</option>                                
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="bandVacancy">Vacancy</label>
+            <select name="bandVacancy"id="bandVacancy">
+                <option value="guitarist">Guitarist</option>
+                <option value="vocalist">Vocalist</option>
+                <option value="drums">Drums</option>     
+                <option value="bass">Bass</option> 
+               <option value="synth">Synth</option>                                                                   
+            </select>
+          </div>
+          <div class="form-group">
+              <label for="bandDescription">Describe your band</label>
+              <input type="text" name="bandDescription" id="bandDescription" size="100">
+          </div>
+          <div class="form-group">
+              <label for="bandFblink">Facebook page (url)</label>
+              <input type="text" name="bandFblink" id="bandFblink" size="100e">
+          </div>          
+          <button id="submitBand" class="btn btn-primary float-left">Submit</button>
+        </form> --}}
+
+<body>
+    <div class="row">
+        <div class="col m7">
+            <div class="parallax-container">
+                <div class="parallax"><img
+                        src="https://images.pexels.com/photos/1190298/pexels-photo-1190298.jpeg?auto=format%2Ccompress&cs=tinysrgb&dpr=2&h=650&w=940">
+                </div>
+            </div>
+            <div class="section transparent">
+                <div class="row container">
+                    <h1 class="header left"><i class="fas fa-compact-disc"></i>MUSICPAL</h1>
+                </div>
+            </div>
+            <br><br>
+            <div class="parallax-container">
+                <div class="parallax"><img
+                        src="https://images.pexels.com/photos/2350327/pexels-photo-2350327.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+                </div>
+            </div>
+        </div> <!-- SE TERMINA LA PRIMERA COLUMNA-->
+        <div class="col m5">
+            <!--EMPIEZ LA SEGUNDA COLUMNA-->
+            <nav>
+                <div class="nav-wrapper  z-depth-0">
+                    <!-- <a href="#" class="brand-logo"></a> -->
+                    <ul id="nav-mobile" class="right hide-on-med-and-down  z-depth-0">
+                        <li><a href="home.html"> <i class="material-icons">home</i>
+                            </a></li>
+                        <li><a href="register.html">Log in</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="row">
+                <div class="col s12">
+                    <div class="row">
+                        <h1>Add a Post...</h1>
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">account_circle</i>
+                            <input type="text" name="bandName" id="bandName"></input>
+                            <label for="bandName">Band Name</label>
+                        </div>
+                    </div>
+                    <select name="bandLocation" id="bandLocation">
+                        <option value="Guadalajara">Guadalajara</option>
+                        <option value="Monterrey">Monterrey</option>
+                        <option value="Mexico City">Mexico City</option>
+                    </select>
+                    <label for="bandLocation">Choose location</label>
+                </div>
+                <div class="input-field col s12">
+                    <select name="bandVacancy"  id="bandVacancy">
+                        <option value="Guitarist">Guitarist</option>
+                        <option value="Vocalist">Vocalist</option>
+                        <option value="Drums">Drums</option>
+                        <option value="Synth">Synth</option>
+                    </select>
+                    <label for="bandVacancy">Choose what you are looking for</label>
+                </div>
+        
+                <div class="input-field col s12">
+                    <select  id="bandGenre">
+                        <option value="Rock">Rock</option>
+                        <option value="Pop">Pop</option>
+                        <option value="Jazz">Jazz</option>
+                    </select>
+                    <label>Choose band's genre</label>
+                </div>
+                <div class="input-field col s12">
+                    <input id="bandDescription" type="text" data-length="10" name="bandDescription">
+                    <label for="bandDescription">Describe your band</label>
+                </div>
+                <div class="input-field col s12">
+                        <input id="bandFblink" type="text" data-length="10"  name="bandFbLink">
+                        <label for="bandFblink">Add a link to your Facebook</label>
+                    </div>
+                <button class="btn waves-effect waves-light right" id="submitBand" type="submit" name="action">POST
+                    <i class="material-icons right">send</i>
+                </button>
+            </div>
+            <br><br><br><br><br><br>
+            <!-- empieza foooter -->
+            <div class="row">
+                <footer class="page-footer transparent">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col l6 s12">
+                                <h5 class=".text-purple darken-4">MUSICPAL</h5>
+                                <p class="grey-text text-lighten-4">Become part of your favorite bands!.</p>
+                            </div>
+                            <div class="col l4 offset-l2 s12">
+                                <h5 class="text-purple darken-4">Links</h5>
+                                <ul>
+                                    <li><a class="grey-text text-purple lighten-1" href="#!">Instagram</a></li>
+                                    <li><a class="grey-text text-purple lighten-1" href="#!">Facebook</a></li>
+                                    <li><a class="grey-text text-purple lighten-1" href="#!">Github</a></li>
+                                    <li><a class="grey-text text-purple lighten-1" href="#!">Heroku</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-copyright">
+                        <div class="container">
+                            © 2019 Copyright
+                            <a class="grey-text text-lighten-4 right" href="#!">HerokuApp</a>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script>
+        $(document).ready(function () {
+            $('.parallax').parallax();
+            $('select').formSelect();
+        });
+
+        
+
+    </script>
+    <script src="/js/index.js"></script>
+
+</body>   
+
