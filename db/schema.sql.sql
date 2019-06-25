@@ -1,1 +1,2 @@
-SELECT * FROM bandsdb.bands;
+DROP DATABASE IF EXISTS bandsdb;
+CREATE DATABASE bandsdb;
