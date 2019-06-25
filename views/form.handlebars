@@ -52,11 +52,9 @@
             <div class="section transparent">
                 <div class="row container">
                     <h1 class="header left"><i class="fas fa-compact-disc"></i>MUSICPAL</h1>
-
                 </div>
             </div>
             <br><br>
-
             <div class="parallax-container">
                 <div class="parallax"><img
                         src="https://images.pexels.com/photos/2350327/pexels-photo-2350327.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
@@ -76,66 +74,55 @@
                 </div>
             </nav>
             <div class="row">
-
                 <div class="col s12">
                     <div class="row">
                         <h1>Add a Post...</h1>
-
                         <div class="input-field col s12">
                             <i class="material-icons prefix">account_circle</i>
-                            <input id="icon_prefix" type="text" id="bandName"></input>
-                            <label for="icon_prefix">Band Name</label>
+                            <input type="text" name="bandName" id="bandName"></input>
+                            <label for="bandName">Band Name</label>
                         </div>
                     </div>
-                    <select multiple id="bandLocation">
+                    <select name="bandLocation" id="bandLocation">
                         <option value="Guadalajara">Guadalajara</option>
                         <option value="Monterrey">Monterrey</option>
                         <option value="Mexico City">Mexico City</option>
                     </select>
-                    <label>Choose location</label>
-
+                    <label for="bandLocation">Choose location</label>
                 </div>
-
                 <div class="input-field col s12">
-                    <select multiple id="bandVacancy">
+                    <select name="bandVacancy"  id="bandVacancy">
                         <option value="Guitarist">Guitarist</option>
                         <option value="Vocalist">Vocalist</option>
                         <option value="Drums">Drums</option>
                         <option value="Synth">Synth</option>
-
                     </select>
-                    <label>Choose what you are looking for</label>
-
+                    <label for="bandVacancy">Choose what you are looking for</label>
                 </div>
         
-
                 <div class="input-field col s12">
-                    <select multiple id="bandGenre">
-
+                    <select  id="bandGenre">
                         <option value="Rock">Rock</option>
                         <option value="Pop">Pop</option>
                         <option value="Jazz">Jazz</option>
                     </select>
                     <label>Choose band's genre</label>
-
-                </div>
-                <div class="input-field col s12" id="jobDescription">
-                    <input id="input_text" type="text" data-length="10">
-                    <label for="input_text">Describe your vacancy</label>
                 </div>
                 <div class="input-field col s12">
-                        <input id="input_text" type="text" data-length="10"  id="bandFbLink">
-                        <label for="input_text">Add a link to your Facebook</label>
+                    <input id="bandDescription" type="text" data-length="10" name="bandDescription">
+                    <label for="bandDescription">Describe your band</label>
+                </div>
+                <div class="input-field col s12">
+                        <input id="bandFblink" type="text" data-length="10"  name="bandFbLink">
+                        <label for="bandFblink">Add a link to your Facebook</label>
                     </div>
                 <button class="btn waves-effect waves-light right" id="submitBand" type="submit" name="action">POST
                     <i class="material-icons right">send</i>
                 </button>
-
             </div>
             <br><br><br><br><br><br>
             <!-- empieza foooter -->
             <div class="row">
-
                 <footer class="page-footer transparent">
                     <div class="container">
                         <div class="row">
@@ -163,19 +150,18 @@
                 </footer>
             </div>
         </div>
-
-
     </div>
-
-
     </div>
-
     <script>
         $(document).ready(function () {
             $('.parallax').parallax();
             $('select').formSelect();
         });
-    </script>        
 
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="/js/index.js"></script>
+        
+
+    </script>
+    <script src="/js/index.js"></script>
+
+</body>   
+
