@@ -3,11 +3,11 @@ var db = require("../models");
 module.exports = function(app) {
   // Load index page
   app.get("/", function(req, res) {
-    db.Band.findAll({}).then(function(dbExamples) {
-      console.log(dbExamples)
+    db.Band.findAll({}).then(function(dbBands) {
+      console.log(dbBands)
       res.render("index", {
         msg: "testing!",
-        bands: dbExamples
+        bands: dbBands
       });
     });
   });

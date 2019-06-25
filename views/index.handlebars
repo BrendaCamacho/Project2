@@ -22,14 +22,70 @@
             <a href="example/{{this.id}}">{{this.bandName}}</a>
             <button class="btn btn-danger float-right delete">ｘ</button>
           </li> --}}
-          {{this.id}}
-          {{this.bandName}}
+          <ul>
+            <li>{{this.bandName}}</li>
+            <li>{{this.bandGenre}}</li>
+            <li>{{this.bandLocation}}</li>
+            <li>{{this.bandVacancy}}</li>
+            <li>{{this.bandFblink}}</li>
+            <li>{{this.bandDescription}}</li>
+          </ul>
           {{/each}}
         </ul>
       </div>
     </div>
   </div>
 </div>
+
+<h1>
+  Aqui comienza nuestro ejemplo
+</h1>
+
+<div class="row mainbutton">
+    <div class="col s12">
+        <p> This is an app where you can find new musicians for your band, you just have to create a post and
+            wait until someone contact you!</p>
+        <a href="#"><button>Add a Band!</button></a>
+    </div>
+{{#each bands}}    
+    <div class="row card-content valign center">
+        <div class="addsContainer col s12 card-content valign center">
+            <div class="cardContainer col s12 m6 l4 xl3 card-content valign-center">
+                <div class="card sticky-action col s12" style="overflow: visible;">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator img"
+                            src="https://www.katyperry.com/files/2017/04/Screen-Shot-2017-02-14-at-5.17.09-PM.png">
+                    </div>
+                    <div class="card-content">
+                        <div class="cardTitle"></div>
+                        <div class="card-title activator truncate flexTitle ">
+                          {{this.bandName}}
+                        </div>
+                        <div class="cardText">
+                            <p class="paragraph">{{this.bandGenre}}</p>
+                            <p class="paragraph">{{this.bandLocation}}</p>
+                            <p class="paragraph">{{this.bandVacancy}}</p>
+                        </div>
+                    </div>
+                    <div class="card-reveal" style="display: none; transform: translateY(0%);">
+                        <div class="card-title flexTitle truncate"></div>
+                        <div class="card-title">
+                            <i class="material-icons small right">close</i>
+                        </div>
+                        <h5 class="job-description card-content valign center">Band Description</h5>
+                        <p>{{this.bandDescription}}</p>
+                        <button class="btn waves-effect waves-light" href="a01229827@itesm.mx">
+                          {{this.bandFblink}}
+                            <i class="material-icons right">call</i>
+                        </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{{/each}}
 
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="/js/index.js"></script>
