@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <!-- link to Jquery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+        <!-- Link to CSS -->
+        <link rel="stylesheet" href="styles/styles.css">
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <!-- Link to Google Fontos -->
+        <link href="https://fonts.googleapis.com/css?family=Chango|Gugi&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Galindo|Keania+One|Nova+Flat|Salsa|Wallpoet&display=swap"
+            rel="stylesheet">
+        <!-- MATERIAL ICON -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!-- font awesome -->
+        <script src="https://use.fontawesome.com/aea2d8341a.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>
+            POST
+        </title>
+    </head>
+</head>
+
+<body>
+    <div class="row">
+        <div class="col m7">
+            <div class="parallax-container">
+                <div class="parallax"><img
+                        src="https://images.pexels.com/photos/1190298/pexels-photo-1190298.jpeg?auto=format%2Ccompress&cs=tinysrgb&dpr=2&h=650&w=940">
+                </div>
+            </div>
+            <div class="section transparent">
+                <div class="row container">
+                    <h1 class="header left"><i class="fas fa-compact-disc"></i>MUSICPAL</h1>
+
+                </div>
+            </div>
+            <br><br>
+
+            <div class="parallax-container">
+                <div class="parallax"><img
+                        src="https://images.pexels.com/photos/2350327/pexels-photo-2350327.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+                </div>
+            </div>
+        </div> <!-- SE TERMINA LA PRIMERA COLUMNA-->
+        <div class="col m5">
+            <!--EMPIEZ LA SEGUNDA COLUMNA-->
+            <nav>
+                <div class="nav-wrapper  z-depth-0">
+                    <!-- <a href="#" class="brand-logo"></a> -->
+                    <ul id="nav-mobile" class="right hide-on-med-and-down  z-depth-0">
+                        <li><a href="home.html"> <i class="material-icons">home</i>
+                            </a></li>
+                        <li><a href="register.html">Log in</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="row">
+
+                <div class="col s12">
+                    <div class="row">
+                        <h1>Add a Post...</h1>
+
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">account_circle</i>
+                            <input id="icon_prefix" type="text" id="bandName"></input>
+                            <label for="icon_prefix">Band Name</label>
+                        </div>
+                    </div>
+                    <select multiple id="bandLocation">
+                        <option value="Guadalajara">Guadalajara</option>
+                        <option value="Monterrey">Monterrey</option>
+                        <option value="Mexico City">Mexico City</option>
+                    </select>
+                    <label>Choose location</label>
+
+                </div>
+
+                <div class="input-field col s12">
+                    <select multiple id="bandVacancy">
+                        <option value="Guitarist">Guitarist</option>
+                        <option value="Vocalist">Vocalist</option>
+                        <option value="Drums">Drums</option>
+                        <option value="Synth">Synth</option>
+
+                    </select>
+                    <label>Choose what you are looking for</label>
+
+                </div>
+        
+
+                <div class="input-field col s12">
+                    <select multiple id="bandGenre">
+
+                        <option value="Rock">Rock</option>
+                        <option value="Pop">Pop</option>
+                        <option value="Jazz">Jazz</option>
+                    </select>
+                    <label>Choose band's genre</label>
+
+                </div>
+                <div class="input-field col s12" id="jobDescription">
+                    <input id="input_text" type="text" data-length="10">
+                    <label for="input_text">Describe your vacancy</label>
+                </div>
+                <div class="input-field col s12">
+                        <input id="input_text" type="text" data-length="10"  id="bandFbLink">
+                        <label for="input_text">Add a link to your Facebook</label>
+                    </div>
+                <button class="btn waves-effect waves-light right" id="submitBand" type="submit" name="action">POST
+                    <i class="material-icons right">send</i>
+                </button>
+
+            </div>
+            <br><br><br><br><br><br>
+            <!-- empieza foooter -->
+            <div class="row">
+
+                <footer class="page-footer transparent">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col l6 s12">
+                                <h5 class=".text-purple darken-4">MUSICPAL</h5>
+                                <p class="grey-text text-lighten-4">Become part of your favorite bands!.</p>
+                            </div>
+                            <div class="col l4 offset-l2 s12">
+                                <h5 class="text-purple darken-4">Links</h5>
+                                <ul>
+                                    <li><a class="grey-text text-purple lighten-1" href="#!">Instagram</a></li>
+                                    <li><a class="grey-text text-purple lighten-1" href="#!">Facebook</a></li>
+                                    <li><a class="grey-text text-purple lighten-1" href="#!">Github</a></li>
+                                    <li><a class="grey-text text-purple lighten-1" href="#!">Heroku</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-copyright">
+                        <div class="container">
+                            © 2019 Copyright
+                            <a class="grey-text text-lighten-4 right" href="#!">HerokuApp</a>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $('.parallax').parallax();
+            $('select').formSelect();
+        });
+    </script>
+</body>
+
+</html>
