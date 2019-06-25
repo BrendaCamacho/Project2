@@ -1,6 +1,4 @@
-<<<<<<< HEAD
-node_modules/
-=======
+
 node_modules
 .env
->>>>>>> 90394c509704553eb6467ee82a80d1a55f9f8cf9
+.DS_Store
