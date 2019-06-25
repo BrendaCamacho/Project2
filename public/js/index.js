@@ -123,7 +123,7 @@ var handleFormSubmit = function(event) {
   API.saveBand(band).then(function() {
     alert("Adding band!")
     //refreshExamples();
-    window.location.href = "/form";
+    window.location.href = "/";
   });
 
   $bandName.val(""),
