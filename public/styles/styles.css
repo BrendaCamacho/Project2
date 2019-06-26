@@ -179,16 +179,14 @@ input[type="text"]{
 }
 
 label{
-font-size: 2em;
-
+  font-size: 2em;
+}
 select{
-  
-  background-color: transparent!important;
+  background-color: transparent !important;
 }
 
 li>span{
   background-color: rgba(250,250,250, 0.5)!important;
-<<<<<<< HEAD
 }
 
 nav {
@@ -387,6 +385,3 @@ nav {
 .job-description {
   font-family: 'Gugi', cursive;
 }
-=======
-}
->>>>>>> master

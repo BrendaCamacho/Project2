@@ -104,30 +104,17 @@ var refreshExamples = function() {
 var handleFormSubmit = function(event) {
   event.preventDefault();
   var band = {
-<<<<<<< HEAD
     name: $bandName.val().trim(),
     genre: $bandGenre.val().trim(),
     location: $bandLocation.val().trim(),
     vacancy: $bandVacancy.val().trim(),
     description: $bandDescription.val().trim(),
     fblink: $bandFblink.val().trim()
-=======
-    bandName: $bandName.val().trim(),
-    bandGenre: $bandGenre.val().trim(),
-    bandLocation: $bandLocation.val().trim(),
-    bandVacancy: $bandVacancy.val().trim(),
-    bandDescription: $bandDescription.val().trim(),
-    bandFblink: $bandFblink.val().trim()
->>>>>>> master
   };
   //console log to verify the object is being created
   console.log(band);
 
-<<<<<<< HEAD
   if (!(band.name)) {
-=======
-  if (!(band.bandName)) {
->>>>>>> master
     alert("You must fill the missing fields");
     return;
   }
@@ -146,10 +133,6 @@ var handleFormSubmit = function(event) {
   $bandDescription.val(""),
   $bandFblink.val("")
 }; 
-<<<<<<< HEAD
-=======
-
->>>>>>> master
 
 // handleDeleteBtnClick is called when an example's delete button is clicked
 // Remove the example from the db and refresh the list
