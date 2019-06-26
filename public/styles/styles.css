@@ -7,7 +7,7 @@ nav i, nav [class^="mdi-"], nav [class*="mdi-"], nav i.material-icons {
 }
 
 nav ul a{
-  font-size: .8em!important
+  font-size: 1em!important
 }
 /* BODY GRADIANT */
 body {
@@ -15,15 +15,15 @@ body {
   /* background-image: linear-gradient(to top, #fe0260, #cc1b4d, #9c203c, #6e1f2c, #431a1e, #30161e, #1d1118, #080708, #060506, #040304, #020202, #000000); */
   /* background-image: linear-gradient(to right, #d7d2cc 0%, #304352 100%); */
 }
-.description{
+/* .description{
   color:white!important;
   font-family: Arial, Helvetica, sans-serif;
   font-size:1em!important;
   padding-left: .6em!important;
 
   text-align: center
-  
-}
+   */
+/* } */
 .header {
   font-family: 'Gugi', cursive;
 
@@ -31,8 +31,8 @@ body {
   /* color:#21E16C; */
   color: white;
   opacity: .4;
-  text-align: right !important;
-  font-size: 1.8rem !important;
+  text-align: center !important;
+  font-size: 6rem !important;
   /* padding-left: rem; */
   text-shadow:#4a16df  6px!important
 
@@ -40,10 +40,9 @@ body {
 
 }
 h1{
-  font-family: 'Gugi', cursive;
-
+  font-family: 'Gugi', cursive!important;
   text-align: baseline!important;
-  font-size: 1.5rem !important;
+  font-size: 2rem !important;
   opacity: .4;
   display: flex;
   justify-content: baseline;
@@ -202,8 +201,9 @@ li>span{
 }
 .containerMargin{
   border: white solid!important;
+  
   border-width: 1px;
-  padding: 3em!important;
+  padding: 1em !important;
 
 
 
