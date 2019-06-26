@@ -58,7 +58,7 @@ var refreshExamples = function() {
     $exampleList.append($examples);
   });
 };
-
+/*
 // handleFormSubmit is called whenever we submit a new example
 // Save the new example to the db and refresh the list
 var handleFormSubmit = function(event) {
@@ -80,7 +80,41 @@ var handleFormSubmit = function(event) {
 
   $exampleText.val("");
   $exampleDescription.val("");
-};
+}; */
+
+
+var handleFormSubmit = function(event) {
+  event.preventDefault();
+  var band = {
+    name: $bandName.val().trim(),
+    genre: $bandGenre.val().trim(),
+    location: $bandLocation.val().trim(),
+    vacancy: $bandVacancy.val().trim(),
+    description: $bandDescription.val().trim(),
+    fblink: $bandFblink.val().trim()
+  };
+  //console log to verify the object is being created
+  console.log(band);
+
+  if (!(band.name)) {
+    alert("You must fill the missing fields");
+    return;
+  }
+  alert("You click")
+
+  API.saveBand(band).then(function() {
+    alert("Adding band!")
+    //refreshExamples();
+    window.location.href = "/";
+  });
+
+  $bandName.val(""),
+  $bandGenre.val(""),
+  $bandLocation.val(""),
+  $bandVacancy.val(""),
+  $bandDescription.val(""),
+  $bandFblink.val("")
+}; 
 
 // handleDeleteBtnClick is called when an example's delete button is clicked
 // Remove the example from the db and refresh the list

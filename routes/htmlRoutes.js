@@ -11,6 +11,21 @@ module.exports = function(app) {
     });
   });
 
+app.get("/search", function(req, res) {
+  let filters = req.query;
+  for (var prop in filters) {
+    if (filters[prop] === "") {
+      delete filters[prop];
+    }
+  }
+  db.Band.findAll({ where: filters }).then(function (bandsdb) {
+    res.render("search", {
+      bands: bandsdb
+    });
+  });
+})
+  
+
   // Load example page and pass in an example by id
   app.get("/example/:id", function(req, res) {
     db.Example.findOne({ where: { id: req.params.id } }).then(function(dbExample) {

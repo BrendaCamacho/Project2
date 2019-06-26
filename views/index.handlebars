@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 <div id="home">
   <div class="container">
     <div class="row">
@@ -31,3 +32,54 @@
 
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="/js/index.js"></script>
+=======
+    <nav>
+        <div class="nav-wrapper">
+            <a  class="brand-logo center">MusicPal</a>
+            <ul id="nav-mobile" class="left hide-on-med-and-down">
+            </ul>
+        </div>
+    </nav>
+<div class="row mainbutton center-align">
+    <div class="col s12">
+        <p class="card-content valign center intro"> This is an app where you can find new musicians for your band, you just have to create a post and wait until someone contact you!</p>
+        <a href="/form"><button class="bandbutton" >Add a Band!</button></a>
+        <a href="/search"><button class="bandbutton">Search for a band!</button></a>
+    </div>
+</div>
+<div class="row card-content valign center">
+    <div class="addsContainer col s12 card-content valign center">
+        {{#each bands}}
+            <div class="cardContainer col s12 m6 l4 xl3 card-content valign-center">
+                <div class="card sticky-action col s12" style="overflow: visible;">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator img" src="https://www.katyperry.com/files/2017/04/Screen-Shot-2017-02-14-at-5.17.09-PM.png">
+                    </div>
+                    <div class="card-content">
+                        <div class="cardTitle"></div>
+                        <div class="card-title activator truncate flexTitle ">{{name}}</div>
+                        <div class="cardText">
+                            <p class="paragraph">{{genre}}</p>
+                            <p class="paragraph">{{location}}</p>
+                            <p class="paragraph">{{vacancy}}</p>
+                        </div>
+                    </div>
+                    <div class="card-reveal" style="display: none; transform: translateY(0%);">
+                        <div class="card-title flexTitle truncate"></div>
+                        <div class="card-title">
+                            <i class="material-icons small right">close</i>
+                        </div>
+                        <h5 class="job-description card-content valign center">Job Description</h5>
+                        <p>{{description}}</p>
+
+                        <button class="btn waves-effect waves-light fb" href="{{fblink}}">FB Link
+                                <i class="material-icons right">call</i>
+                        </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        {{/each}}
+    </div>
+</div> 
+>>>>>>> Stashed changes
