@@ -7,6 +7,7 @@ var $exampleList = $("#example-list");
 var $submitBand = $("#submitBand")
 var $bandName = $("#bandName");
 var $bandGenre = $("#bandGenre");
+var $imageLink = $("#imageLink");
 var $bandLocation = $("#bandLocation");
 var $bandVacancy = $("#bandVacancy");
 var $bandDescription = $("#bandDescription");
@@ -106,6 +107,7 @@ var handleFormSubmit = function(event) {
   var band = {
     name: $bandName.val().trim(),
     genre: $bandGenre.val().trim(),
+    img: $imageLink.val().trim(),
     location: $bandLocation.val().trim(),
     vacancy: $bandVacancy.val().trim(),
     description: $bandDescription.val().trim(),
@@ -127,6 +129,7 @@ var handleFormSubmit = function(event) {
   });
 
   $bandName.val(""),
+  $imageLink.val(""),
   $bandGenre.val(""),
   $bandLocation.val(""),
   $bandVacancy.val(""),

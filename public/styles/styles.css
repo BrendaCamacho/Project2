@@ -389,3 +389,7 @@ nav {
   font-family: 'Gugi', cursive;
 }
 
+.titulosCard{
+  background-color:transparent!important;
+  color: rgba(249, 77, 255, 1)!important
+}
