@@ -15,34 +15,21 @@ body {
   /* background-image: linear-gradient(to top, #fe0260, #cc1b4d, #9c203c, #6e1f2c, #431a1e, #30161e, #1d1118, #080708, #060506, #040304, #020202, #000000); */
   /* background-image: linear-gradient(to right, #d7d2cc 0%, #304352 100%); */
 }
-/* .description{
-  color:white!important;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size:1em!important;
-  padding-left: .6em!important;
 
-  text-align: center
-   */
-/* } */
 .header {
   font-family: 'Gugi', cursive;
-
-  /* font-family: 'Chango', cursive; */
-  /* color:#21E16C; */
   color: white;
   opacity: .4;
   text-align: center !important;
-  font-size: 8rem !important;
-  padding-left:1.4rem;
+  font-size: 8.2rem !important;
+  padding-left:1.9rem;
   text-shadow:#4a16df  6px!important
 
-
-
 }
-h1{
+.addNew{
   font-family: 'Gugi', cursive!important;
-  text-align: baseline!important;
-  font-size: 2rem !important;
+  text-align: center!important;
+  font-size: 2.2rem !important;
   opacity: .4;
   display: flex;
   justify-content: baseline;
@@ -184,16 +171,11 @@ input[type="text"]{
   background-color: rgba(240,240,240,0.7);
   border:none;
   border-bottom: 1px solid white;
-  border-radius: 0;
   color:white!important
 }
 
 label{
-<<<<<<< HEAD
 font-size: 2em;
-=======
-  font-size: 2em;
->>>>>>> 2eee76d45aa5e5bc2757032942faa1d233998327
 }
 select{
   background-color: transparent !important;
@@ -202,17 +184,13 @@ select{
 li>span{
   background-color: rgba(250,250,250, 0.5)!important;
 }
-<<<<<<< HEAD
 .containerMargin{
   border: white solid!important;
   
   border-width: 1px;
   padding: 1em !important;
-
-
-
 }
-=======
+
 
 nav {
     background-color: transparent !important;
@@ -410,5 +388,4 @@ nav {
 .job-description {
   font-family: 'Gugi', cursive;
 }
->>>>>>> 2eee76d45aa5e5bc2757032942faa1d233998327
 
