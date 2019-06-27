@@ -2,7 +2,7 @@
   "development": {
     "username": "root",
 
-    "password": "Carl_051",
+    "password": "benditacam",
     "database": "bandsdb",
     "host": "localhost",
     "dialect": "mysql"

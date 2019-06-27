@@ -206,7 +206,7 @@ li>span{
 }
 
 
-<<<<<<< HEAD
+
 }
 .carousel{
   height: 450px!important;
@@ -216,7 +216,7 @@ li>span{
   border-width: 5px;
 
 }
-=======
+
 nav {
     background-color: transparent !important;
   }
@@ -414,4 +414,9 @@ nav {
   font-family: 'Gugi', cursive;
 }
 
->>>>>>> d9d5767893ae7b3cbca04665ae17bd48c3e545d4
+
+.titulosCard{
+  background-color:transparent!important;
+  color: rgba(249, 77, 255, 1)!important
+}
+
