@@ -189,16 +189,20 @@ input[type="text"]{
 }
 
 label{
+<<<<<<< HEAD
 font-size: 2em;
+=======
+  font-size: 2em;
+>>>>>>> 2eee76d45aa5e5bc2757032942faa1d233998327
 }
 select{
-  
-  background-color: transparent!important;
+  background-color: transparent !important;
 }
 
 li>span{
   background-color: rgba(250,250,250, 0.5)!important;
 }
+<<<<<<< HEAD
 .containerMargin{
   border: white solid!important;
   
@@ -208,3 +212,202 @@ li>span{
 
 
 }
+=======
+
+nav {
+    background-color: transparent !important;
+  }
+  
+  body {
+    background-image: linear-gradient(to bottom, #4a16df, #5109ad, #4a0680, #3c0957, #290b33, #1c0d28, #130b1c, #07060b, #080a0d, #0b0d0f, #0e1010, #111212);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    /* background-image: linear-gradient(to top, #fe0260, #cc1b4d, #9c203c, #6e1f2c, #431a1e, #30161e, #1d1118, #080708, #060506, #040304, #020202, #000000); */
+    /* background-image: linear-gradient(to right, #d7d2cc 0%, #304352 100%); */
+  }
+  
+  h1 {
+    font-family: 'Gugi', cursive;
+    /* font-family: 'Chango', cursive; */
+    /* color:#21E16C; */
+    color: white;
+    opacity: .4;
+    text-align: right !important;
+    font-size: 10rem !important;
+    padding-left: .5rem;
+  
+  }
+  .parallax{
+    margin-left: -20%
+  }
+  
+  .parallaxText {
+    font-size: 2.3rem !important;
+    text-align: center !important;
+  
+  }
+  
+  .parallax-container {
+    height: 600px !important;
+  }
+  
+  select {
+    font-size: 4em !important;
+    color: white !important;
+    background-color: white !important;
+  }
+  
+  label {
+    font-size: 1em !important;
+  }
+  
+  label.active {
+    color: white !important
+  }
+  
+  option {
+    margin: 1em !important;
+    color: white !important;
+  }
+  .select-wrapper input.select-dropdown:focus{
+    color:white!important;
+    border-bottom: 1px solid white !important;
+  
+  }
+  
+  span {
+    background-color: white !important;
+    color: #4a16df !important
+  }
+  
+  
+  
+  #input_text {
+    color: white !important;
+    box-shadow: #5109ad !important;
+    -webkit-box-shaddow: #5109ad !important;
+    border-bottom-color: white !important;
+    height: 10em !important;
+  }
+  .input-field{
+    color:white!important;
+  }
+  
+  .jobDescription {
+    color: white !important;
+  
+  }
+  
+  select.wrapper {
+    color: white !important;
+  }
+  
+  /* label color */
+  .input-field label {
+    color: white;
+  }
+  
+  /* label focus color */
+  .input-field input[type=text]:focus+label {
+    color: white !important;
+  
+  }
+  
+  /* label underline focus color */
+  .input-field input[type=text]:focus {
+    border-bottom: 1px solid white !important;
+    box-shadow: 0 1px 0 0 white !important;
+  }
+  
+  /* valid color */
+  .input-field input[type=text].valid {
+    border-bottom: 1px solid white !important;
+    box-shadow: 0 1px 0 0 white !important;
+  }
+  
+  /* invalid color */
+  .input-field input[type=text].invalid {
+    border-bottom: 1px solid white !important;
+    box-shadow: 0 1px 0 0 white !important;
+  }
+  
+  /* icon prefix focus color */
+  .input-field .prefix.active {
+    color: white !important;
+  }
+  
+  .submit {
+    margin-right: 1em !important;
+    background-color: white !important;
+    opacity: .9;
+    color: #5109ad !important
+  }
+  select:-internal-list-box option:checked:disabled {
+    color:white!important;
+  }
+
+  .card-title {
+    font-size: 2em !important;
+    color: white !important;
+    font-family: 'Gugi', cursive;
+  }
+
+  .cardText {
+    font-size: 1em !important;
+    color: white !important;
+    text-align: justify;
+  }
+
+  .card{
+      background-color: black !important;
+  }
+
+  .material-icons {
+      color: #7489ED;
+  }
+
+  .brand-logo {
+    font-family: 'Gugi', cursive;
+    font-size: 4rem !important;
+  }
+
+  .img {
+      min-height: 300px;
+      object-fit: cover;
+  }
+
+  .mainbutton {
+    min-height: 50vh;
+    align-content: center;
+  }
+
+  .intro {
+    font-family: 'Gugi', cursive;
+    font-size: 2rem !important;
+    color: #7489ED !important;
+  }
+
+  .bandbutton {
+    padding: 30px;
+    background-color: rgb(64, 64, 139);
+    color: #7489ED;
+    font-size: 1rem !important;
+    border-color: #3c0957;
+  } 
+
+  .card {
+    color: white;
+  }
+
+  .card-reveal {
+    background-color: black !important;
+  }
+
+.fb {
+  background-color: rgb(64, 64, 139) !important;
+}
+
+.job-description {
+  font-family: 'Gugi', cursive;
+}
+>>>>>>> 2eee76d45aa5e5bc2757032942faa1d233998327

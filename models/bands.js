@@ -1,26 +1,26 @@
 module.exports = function (sequelize, DataTypes) {
     var Band = sequelize.define("Band", {
-        bandName: {
+        name: {
             type: DataTypes.STRING,
             allowNull: false
         },
-        bandGenre: {
+        genre: {
             type: DataTypes.STRING,
             allowNull: false
         },
-        bandLocation: {
+        location: {
             type: DataTypes.STRING,
             allowNull: false
         },
-        bandVacancy: {
+        vacancy: {
             type: DataTypes.STRING,
             allowNull: false
         },
-        bandDescription: {
+        description: {
             type: DataTypes.TEXT,
             allowNull: false
         },
-        bandFblink: {
+        fblink: {
             type: DataTypes.STRING,
             allowNull: false
         },

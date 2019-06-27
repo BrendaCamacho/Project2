@@ -2,6 +2,7 @@
   "development": {
     "username": "root",
     "password": "1155850Bety*",
+
     "database": "bandsdb",
     "host": "localhost",
     "dialect": "mysql"
