@@ -26,6 +26,12 @@ body {
   text-shadow:#4a16df  6px!important
 
 }
+#musicpal{
+  font-family: 'Gugi', cursive!important;
+  text-align: center!important;
+  font-size: 39px!important;
+
+}
 .addNew{
   font-family: 'Gugi', cursive!important;
   text-align: center!important;
@@ -137,10 +143,27 @@ select.wrapper {
 #submitBand {
   margin-right: 1em !important;
   background-color: white !important;
-  opacity: .9;
-  color: #5109ad !important
+  border-radius: 10px;
+  border: 4px solid white!important;
+  color: #5109ad !important;
+  padding: .5m 2em!important;
+  font-family: Arial, Helvetica, sans-serif!important;
+  text-align: center;
+  vertical-align: center!important;
+  display: flex!important;
+  align-items: center!important;
+  justify-content: center!important;
+  -webkit-justify-content : center!important;
+  -webkit-box-pack : center!important;
+
+
+
 }
 
+#submitBand:active{
+  background-color: #4a16df!important;
+  border: 1px solid #3c0957!important
+}
 
 /* footer */
 
@@ -189,8 +212,28 @@ li>span{
   
   border-width: 1px;
   padding: 1em !important;
-}
 
+
+<<<<<<< HEAD
+=======
+
+>>>>>>> 831efef7ef78c1ba935702b30b368cdc72a53332
+}
+.carousel{
+  height: 550px!important;
+  /* opacity: ; */
+  color:white!important;
+  border-bottom: white solid!important;
+  border-width: 5px;
+
+}
+<<<<<<< HEAD
+form{
+  color:grey!important;
+  /* font-weight: bold!important; */
+  font-size: 20px!important; padding: 3px!important;
+}
+=======
 
 nav {
     background-color: transparent !important;
@@ -389,7 +432,10 @@ nav {
   font-family: 'Gugi', cursive;
 }
 
+
 .titulosCard{
   background-color:transparent!important;
   color: rgba(249, 77, 255, 1)!important
 }
+
+>>>>>>> 831efef7ef78c1ba935702b30b368cdc72a53332
