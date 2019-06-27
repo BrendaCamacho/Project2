@@ -1,46 +1,62 @@
 <body>
     <div class="row">
-        <div class="col m7">
+        {{!-- EMPIEZA PRIMERA COLUMNA --}}
+        <div class="col m6">
             <div class="parallax-container">
-                <div class="parallax"><img
-                        src="https://images.pexels.com/photos/1190298/pexels-photo-1190298.jpeg?auto=format%2Ccompress&cs=tinysrgb&dpr=2&h=650&w=940">
+                <div class="parallax">
+                        <img src="https://images.pexels.com/photos/1190298/pexels-photo-1190298.jpeg?auto=format%2Ccompress&cs=tinysrgb&dpr=2&h=650&w=940">
                 </div>
             </div>
             <div class="section transparent">
                 <div class="row container">
-                    <h1 class="header left"><i class="fas fa-compact-disc"></i>MUSICPAL</h1>
+                    <br>
+                    <h1 class="header left">MUSICPAL</h1>
                 </div>
             </div>
             <br><br>
             <div class="parallax-container">
                 <div class="parallax"><img
-                        src="https://images.pexels.com/photos/2350327/pexels-photo-2350327.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+                        src="https://images.pexels.com/photos/1267350/pexels-photo-1267350.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
                 </div>
             </div>
         </div> <!-- SE TERMINA LA PRIMERA COLUMNA-->
-        <div class="col m5">
+        <div class="col m6">
             <!--EMPIEZ LA SEGUNDA COLUMNA-->
             <nav>
                 <div class="nav-wrapper  z-depth-0">
                     <!-- <a href="#" class="brand-logo"></a> -->
                     <ul id="nav-mobile" class="right hide-on-med-and-down  z-depth-0">
-                        <li><a href="home.html"> <i class="material-icons">home</i>
+                        
+
+
+                        <li><a href="home.html">Home</i>
                             </a></li>
                         <li><a href="register.html">Log in</a></li>
                     </ul>
                 </div>
             </nav>
+            {{!-- EMPIEZA EL FORMULARIO --}}
+            <div class="container containerMargin">
             <div class="row">
                 <div class="col s12">
                     <div class="row">
-                        <h1>Add a Post...</h1>
+                            <div class="col s12">
+                        <h1 >    Add a new post to MUSICPAL</h1>
+                             </div>
+                    </div>
                         <div class="input-field col s12">
+                        <div class="row">
+
                             <i class="material-icons prefix">account_circle</i>
                             <input type="text" name="bandName" id="bandName"></input>
                             <label for="bandName">Band Name</label>
                         </div>
+
+       
+
                     </div>
                     <select name="bandLocation" id="bandLocation">
+                        <option value="" disabled selected></option>
                         <option value="Guadalajara">Guadalajara</option>
                         <option value="Monterrey">Monterrey</option>
                         <option value="Mexico City">Mexico City</option>
@@ -49,6 +65,7 @@
                 </div>
                 <div class="input-field col s12">
                     <select name="bandVacancy"  id="bandVacancy">
+                        <option value="" disabled selected></option>
                         <option value="Guitarist">Guitarist</option>
                         <option value="Vocalist">Vocalist</option>
                         <option value="Drums">Drums</option>
@@ -58,7 +75,8 @@
                 </div>
         
                 <div class="input-field col s12">
-                    <select  name="bandGenre" id="bandGenre">
+                    <select  id="bandGenre">
+                        <option value="" disabled selected></option>
                         <option value="Rock">Rock</option>
                         <option value="Pop">Pop</option>
                         <option value="Jazz">Jazz</option>
@@ -76,8 +94,13 @@
                 <button class="btn waves-effect waves-light right" id="submitBand" type="submit" name="action">POST
                     <i class="material-icons right">send</i>
                 </button>
+                </div>
             </div>
-            <br><br><br><br><br><br>
+             <br><br><br><br><br><br>
+            <br><br><br>
+
+            <br><br><br>
+
             <!-- empieza foooter -->
             <div class="row">
                 <footer class="page-footer transparent">
@@ -85,7 +108,7 @@
                         <div class="row">
                             <div class="col l6 s12">
                                 <h5 class=".text-purple darken-4">MUSICPAL</h5>
-                                <p class="grey-text text-lighten-4">Become part of your favorite bands!.</p>
+                                <p class="grey-text text-lighten-4">Become part of your favorite bands!</p>
                             </div>
                             <div class="col l4 offset-l2 s12">
                                 <h5 class="text-purple darken-4">Links</h5>
