@@ -1,5 +1,7 @@
 nav {
     background-color: transparent !important;
+    padding:25px!important;
+    margin-bottom: 10px;
   }
   
   body {
@@ -195,3 +197,12 @@ nav {
   font-family: 'Gugi', cursive;
 }
 
+
+.formContainer{
+  padding:30px;
+}
+
+#intro{
+  max-width: 70vw;
+  margin: 10px;
+}
