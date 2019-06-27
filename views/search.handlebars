@@ -1,41 +1,50 @@
-<!-- form -->
-<form action="/search" method="GET">
-    <div class="row">
-        <div class="input-field col s12">
-            <select name="location" id="bandLocation">
-                <option value=""></option>
-                <option value="Guadalajara">Guadalajara</option>
-                <option value="Monterrey">Monterrey</option>
-                <option value="Mexico City">Mexico City</option>
-            </select>
-            <label for="bandLocation">Choose location</label>
-        </div>
-        <div class="input-field col s12">
-            <select name="vacancy" id="bandVacancy">
-                <option value=""></option>
-                <option value="Guitarist">Guitarist</option>
-                <option value="Vocalist">Vocalist</option>
-                <option value="Drums">Drums</option>
-                <option value="Synth">Synth</option>
-            </select>
-            <label for="bandVacancy">Choose what you are looking for</label>
-        </div>
-
-        <div class="input-field col s12">
-            <select name="genre" id="genre">
-                <option value=""></option>
-                <option value="Rock">Rock</option>
-                <option value="Pop">Pop</option>
-                <option value="Jazz">Jazz</option>
-            </select>
-            <label>Choose band's genre</label>
-        </div>
+<nav>
+    <div class="nav-wrapper">
+        <a href="/"class="brand-logo center">MusicPal</a>
+        <ul id="nav-mobile" class="left hide-on-med-and-down">
+        </ul>
     </div>
+</nav>
+<!-- form -->
+<div class="formContainer">
+    <form action="/search" method="GET">
+        <div class="row">
+            <div class="input-field col s12">
+                <select name="location" id="bandLocation">
+                    <option value=""></option>
+                    <option value="Guadalajara">Guadalajara</option>
+                    <option value="Monterrey">Monterrey</option>
+                    <option value="Mexico City">Mexico City</option>
+                </select>
+                <label for="bandLocation">Choose location</label>
+            </div>
+            <div class="input-field col s12">
+                <select name="vacancy" id="bandVacancy">
+                    <option value=""></option>
+                    <option value="Guitarist">Guitarist</option>
+                    <option value="Vocalist">Vocalist</option>
+                    <option value="Drums">Drums</option>
+                    <option value="Synth">Synth</option>
+                </select>
+                <label for="bandVacancy">Choose what you are looking for</label>
+            </div>
 
-    <button type="submit">Search</button>
+            <div class="input-field col s12">
+                <select name="genre" id="genre">
+                    <option value=""></option>
+                    <option value="Rock">Rock</option>
+                    <option value="Pop">Pop</option>
+                    <option value="Jazz">Jazz</option>
+                </select>
+                <label>Choose band's genre</label>
+            </div>
+        </div>
 
-    </button>
-</form>
+        <button type="submit" class="bandbutton" id="searchButton">Search</button>
+
+        </button>
+    </form>
+</div>
 
 <script>
     $(document).ready(function () {
