@@ -26,6 +26,12 @@ body {
   text-shadow:#4a16df  6px!important
 
 }
+#musicpal{
+  font-family: 'Gugi', cursive!important;
+  text-align: center!important;
+  font-size: 39px!important;
+
+}
 .addNew{
   font-family: 'Gugi', cursive!important;
   text-align: center!important;
@@ -137,10 +143,18 @@ select.wrapper {
 #submitBand {
   margin-right: 1em !important;
   background-color: white !important;
-  opacity: .9;
-  color: #5109ad !important
+  border-radius: 10px;
+  border: 1px solid white!important;
+  color: #5109ad !important;
+  padding: 1em 2em!important;
+  font-weight: bold!important;
+  font-family: Arial, Helvetica, sans-serif!important;
 }
 
+#submitBand:active{
+  background-color: #4a16df!important;
+  border: 1px solid cyan!important
+}
 
 /* footer */
 
@@ -191,5 +205,12 @@ li>span{
   padding: 1em !important;
 
 
+}
+.carousel{
+  height: 450px!important;
+  opacity: .8;
+  color:white!important;
+  border-bottom: white solid!important;
+  border-width: 5px;
 
 }

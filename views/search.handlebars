@@ -1,6 +1,33 @@
 <!-- form -->
-<form action="/search" method="GET">
+<body>
+
+  
+  <div class="carousel carousel-slider">
+    <a class="carousel-item" href="#one!"><img src="https://images.pexels.com/photos/1916821/pexels-photo-1916821.jpeg?auto=format%2Ccompress&cs=tinysrgb&dpr=2&h=650&w=940"></a>
+ 
+        {{!-- EMPIEZA PRIMERA COLUMNA --}}
+               <nav>
+                <div class="nav-wrapper  z-depth-0">
+                    <ul id="nav-mobile" class="left hide-on-med-and-down  z-depth-0">
+                        <li><a href="/search"><h4 id="musicpal">MUSICPAL</h4></a></li>
+                        <li><a href="/">Home</i>
+                            </a></li>
+                        <li><a href="/search">Search</a></li>
+                          
+
+                    </ul>
+                </div>
+            </nav>
+            <br><br><br>
+ 
+<div class="container containerMargin">
+    
+
     <div class="row">
+                <div class="col m8">
+
+
+<form action="/search" method="GET">
         <div class="input-field col s12">
             <select name="location" id="bandLocation">
                 <option value=""></option>
@@ -29,18 +56,26 @@
                 <option value="Jazz">Jazz</option>
             </select>
             <label>Choose band's genre</label>
+                        <button id="submitBand" type="submit">Search</button>
+
         </div>
+
+
     </div>
-
-    <button type="submit">Search</button>
-
-    </button>
+    </div>
 </form>
+</div>
+</div>
 
+</body>
 <script>
     $(document).ready(function () {
         $('.parallax').parallax();
         $('select').formSelect();
+        $('.carousel.carousel-slider').carousel({
+    fullWidth: true,
+    indicators: true
+  });
     });
 
 </script>
