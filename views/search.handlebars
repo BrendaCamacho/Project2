@@ -59,36 +59,35 @@
 <div class="row card-content valign center">
     <div class="addsContainer col s12 card-content valign center">
 {{#each bands}}
-<div class="cardContainer col s12 m6 l4 xl3 card-content valign-center">
-    <div class="card sticky-action col s12" style="overflow: visible;">
-        <div class="card-image waves-effect waves-block waves-light">
-            <img class="activator img"
-                src="https://www.katyperry.com/files/2017/04/Screen-Shot-2017-02-14-at-5.17.09-PM.png">
-        </div>
-        <div class="card-content">
-            <div class="cardTitle"></div>
-            <div class="card-title activator truncate flexTitle ">{{name}}</div>
-            <div class="cardText">
-                <p class="paragraph">{{genre}}</p>
-                <p class="paragraph">{{location}}</p>
-                <p class="paragraph">{{vacancy}}</p>
+            <div class="cardContainer col s12 m6 l4 xl3 card-content valign-center">
+                <div class="card sticky-action col s12" style="overflow: visible;">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator img" src="{{img}}">
+                    </div>
+                    <div class="card-content">
+                        <div class="cardTitle"></div>
+                        <div class="card-title activator truncate flexTitle ">{{name}}</div>
+                        <div class="cardText">
+                            <p class="paragraph"><span class="titulosCard">Genre: </span>{{genre}}</p>
+                            <p class="paragraph"><span class="titulosCard">Location: </span>{{location}}</p>
+                            <p class="paragraph"><span class="titulosCard">Looking for: </span>{{vacancy}}</p>
+                        </div>
+                    </div>
+                    <div class="card-reveal" style="display: none; transform: translateY(0%);">
+                        <div class="card-title flexTitle truncate"></div>
+                        <div class="card-title">
+                            <i class="material-icons small right">close</i>
+                        </div>
+                        <h5 class="job-description card-content valign center">Our Band</h5>
+                        <p>{{description}}</p>
+                        <a  href="{{fblink}}">
+                        <button class="btn waves-effect waves-light fb">FB Link
+                                <i class="material-icons right">call</i>
+                        </button>
+                        </a>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="card-reveal" style="display: none; transform: translateY(0%);">
-            <div class="card-title flexTitle truncate"></div>
-            <div class="card-title">
-                <i class="material-icons small right">close</i>
-            </div>
-            <h5 class="job-description card-content valign center">Our Band</h5>
-            <p>{{description}}</p>
-
-            <button class="btn waves-effect waves-light fb" href="{{fblink}}">FB Link
-                <i class="material-icons right">call</i>
-            </button>
-            </a>
-        </div>
-    </div>
-</div>
 {{/each}}
 </div>
 </div>
