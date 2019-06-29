@@ -13,8 +13,11 @@ module.exports = function(app) {
   });
 
 app.get("/search", function(req, res) {
+  console.log("req.query",req.query);
   let filters = req.query;
   for (var prop in filters) {
+    console.log("prop", prop);
+    console.log("filters[prop]", filters[prop]);
     if (filters[prop] === "") {
       delete filters[prop];
     }
