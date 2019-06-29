@@ -158,8 +158,8 @@ nav {
   }
 
   .img {
-      min-height: 300px;
-      object-fit: cover;
+      min-height: 300px!important;
+      object-fit: cover!important;
   }
 
   .mainbutton {
