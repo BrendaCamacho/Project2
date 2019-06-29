@@ -214,10 +214,6 @@ li>span{
   padding: 1em !important;
 
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 831efef7ef78c1ba935702b30b368cdc72a53332
 }
 .carousel{
   height: 550px!important;
@@ -227,13 +223,11 @@ li>span{
   border-width: 5px;
 
 }
-<<<<<<< HEAD
 form{
   color:grey!important;
   /* font-weight: bold!important; */
   font-size: 20px!important; padding: 3px!important;
 }
-=======
 
 nav {
     background-color: transparent !important;
@@ -393,8 +387,8 @@ nav {
   }
 
   .img {
-      min-height: 300px;
-      object-fit: cover;
+      min-height: 300px!important;
+      object-fit: cover!important;
   }
 
   .mainbutton {
@@ -438,4 +432,3 @@ nav {
   color: rgba(249, 77, 255, 1)!important
 }
 
->>>>>>> 831efef7ef78c1ba935702b30b368cdc72a53332
