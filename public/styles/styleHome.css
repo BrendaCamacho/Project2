@@ -176,10 +176,13 @@ nav {
   .bandbutton {
     padding: 30px;
     background-color: rgb(64, 64, 139);
+    border-radius: 10px;
+
     color: #7489ED;
     font-size: 1rem !important;
     border-color: #3c0957;
   } 
+  
 
   .card {
     color: white;
@@ -217,3 +220,6 @@ nav {
   color: rgba(249, 77, 255, 1)!important
 }
 
+.card-image{
+  height:300px!important
+}
